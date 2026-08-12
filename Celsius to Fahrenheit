@@ -7,7 +7,7 @@ int main()
     int tc,tk;
     printf("Enter the temperature in Celsius: ");
     scanf("%d",&tc);
-    tk=tc+273;
+    tk=tc+273.15;
     printf("The temperature in Kelvin is: %d",tk);
     return 0;
 }
