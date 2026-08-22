@@ -1,0 +1,36 @@
+// Q25: Write a program to implement a basic calculator using switch-case for +, -, *, /, %.
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+    char o;
+    printf("Enter two numbers: ");
+    scanf("%d %d",&a,&b);
+    
+    printf("choose operation");
+    scanf(" %c",&o);
+
+    switch(o)
+    {
+        case '+':
+            printf("Sum = %d",a+b);
+            break;
+        case '-':
+            printf("Difference = %d",a-b);
+            break;
+        case '*':
+            printf("Product = %d",a*b);
+            break;
+        case '/':
+            if(b!=0)
+                printf("Quotient = %d",a/b);
+            else
+                printf("Division by zero is not allowed.");
+            break;
+        default:
+            printf("Invalid operation");
+    }
+    return 0;
+}
